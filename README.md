@@ -5,8 +5,7 @@ HaptiChem - Virtual Reality for Chemistry
 
 Contents
 ------------------------
-Repository : Source code
-
+	Repository : Source code
 	Installation : Installation Manual (html,jp)
 	Manuals : Users' Manual (html,jp)
 
