@@ -1,0 +1,459 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="stylesheet" href="../importstyle.css" type="text/css">
+<link rev="made" href="mailto:cheminfo@nii.ac.jp">
+<link rel="index" href="index.html">
+<link rel="shortcut icon" href="../HaptiChem.ico">
+<title>HCVanDerWaalsChart</title>
+</head>
+<body>
+<p class="align-right"><a name="TOP">2007年01月25日</a></p>
+<hr>
+<h1>希ガス２分子間の相互作用 - チャート</h1>
+<p>もくじ：</p>
+<ul>
+  <li><a href="#About">チャートとは</a>
+  <li><a href="#Open">チャートを開く</a>
+  <li><a href="#Screen">画面</a>
+  <li><a href="#Menu">メニュー</a>
+  <ul>
+    <li><a href="#File">ファイル</a>
+    <ul>
+      <li><a href="#File_Save-as-Image">画像として保存</a>
+      <li><a href="#File_Quit">終了</a>
+    </ul>
+    <li><a href="#View">表示</a>
+    <ul>
+      <li><a href="#View_Potential">ポテンシャル</a>
+      <li><a href="#View_Force">力</a>
+      <li><a href="#View_Limit">限度</a>
+      <li><a href="#View_Reset">リセット</a>
+    </ul>
+    <li><a href="#Window">ウィンドウ</a>
+    <ul>
+      <li><a href="#Window_Settings">設定</a>
+      <li><a href="#Window_Viewfinder">ビューファインダ</a>
+      <li><a href="#Window_Gauge">ゲージ</a>
+      <li><a href="#Window_Details">詳細</a>
+    </ul>
+    <li><a href="#Misc">その他</a>
+    <ul>
+      <li><a href="#Misc_Manual">使用手引き</a>
+      <li><a href="#Misc_Inspect">検査</a>
+    </ul>
+  </ul>
+</ul>
+<hr>
+<h2><a name="About">チャートとは</a></h2>
+<p>希ガス２分子間の相互作用のメインウィンドウです。<br>
+希ガス２分子間のファン・デル・ワールス相互作用の力やポテンシャルの関数を表示します。</p>
+<p>SPIDAR-G に接続すると、グリップを３次元空間内で操作することができますが、グリップの位置からターゲットとの距離を計算し、２次元で表示します。<br>
+グリップの位置によって変化する分子間力の強さを確認するときに便利です。</p>
+<p>SPIDAR-G と接続していないときは、マウスでグリップの位置を移動できます。<br>
+この場合は、グリップとターゲットの位置を結んだ直線上に沿って動きます。</p>
+<hr>
+<h2><a name="Open">チャートを開く</a></h2>
+<p>チャートを開くには、HaptiChemランチャーの「Tools」-&gt;「VDW : Two Rare Gas Atoms」メニューを選択します。<br>
+関連しているウィンドウも同時に開きます。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/Open_01.jpg"><img src="thumbnails/Open_01.jpg" width="102" height="89" border="1" alt="Open_01.jpg"></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/Tools_VDW2_Chart.jpg"><img src="thumbnails/Tools_VDW2_Chart.jpg" width="179" height="189" border="1" alt="Tools_VDW2_Chart.jpg"></a></td>
+            <td class="center-small" colspan="2"><a href="images/Tools_VDW2_Gauges.jpg"><img src="thumbnails/Tools_VDW2_Gauges.jpg" width="244" height="189" border="1" alt="Tools_VDW2_Gauges.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">チャート<br>
+            （メインウィンドウ）</td>
+            <td class="center-small" colspan="2"><a href="#Window_Gauge">ゲージ</a></td>
+          </tr>
+          <tr>
+            <td class="center-small"><a href="images/Tools_VDW2_Viewfinder.jpg"><img src="thumbnails/Tools_VDW2_Viewfinder.jpg" width="179" height="189" border="1" alt="Tools_VDW2_Viewfinder.jpg"></a></td>
+            <td class="center-small"><a href="images/Tools_VDW2_Settings.jpg"><img src="thumbnails/Tools_VDW2_Settings.jpg" width="122" height="174" border="1" alt="Tools_VDW2_Settings.jpg"></a></td>
+            <td class="center-small"><a href="images/Tools_VDW2_Details.jpg"><img src="thumbnails/Tools_VDW2_Details.jpg" width="122" height="174" border="1" alt="Tools_VDW2_Details.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small"><a href="#Window_Viewfinder">ビューファインダ</a></td>
+            <td class="center-small"><a href="#Window_Settings">設定</a></td>
+            <td class="center-small"><a href="#Window_Details">詳細</a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h2><a name="Screen">画面</a></h2>
+<h3>画面説明</h3>
+<p>チャートの画面は以下のようになっています。</p>
+<map name="Screen">
+  <area shape="rect" coords="10,245,32,272" href="#E" alt="E">
+  <area shape="rect" coords="222,442,246,469" href="#D" alt="D">
+  <area shape="rect" coords="222,10,246,37" href="#C" alt="C">
+  <area shape="rect" coords="436,421,458,448" href="#5" alt="5">
+  <area shape="rect" coords="436,343,458,370" href="#3" alt="3">
+  <area shape="rect" coords="436,382,458,409" href="#4" alt="4">
+  <area shape="rect" coords="436,245,458,272" href="#2" alt="2">
+  <area shape="rect" coords="84,10,108,37" href="#A" alt="A">
+  <area shape="rect" coords="138,10,161,37" href="#B" alt="B">
+  <area shape="rect" coords="436,91,458,118" href="#1" alt="1">
+</map> <img src="map/HCVanDerWaalsChart.jpg" width="464" height="482" border="0" alt="HCVanDerWaalsChart.jpg" usemap="#Screen">
+<ul>
+  <li><a name="1">1</a> : <strong>ドラッグボタン</strong>
+  <li><a name="2">2</a> : <strong>Ｚホィール</strong>
+  <li><a name="3">3</a> : <img src="buttons/calibrateButton.jpg" width="18" height="18" alt="calibrateButton.jpg"> <strong>キャリブレーションボタン</strong><br>
+  <li><a name="4">4</a> : <img src="buttons/visualButton.jpg" width="18" height="18" alt="visualButton.jpg"> <strong>視覚ボタン</strong><br>
+  <li><a name="5">5</a> : <img src="buttons/hapticButton.jpg" width="18" height="18" alt="hapticButton.jpg"> <strong>力覚ボタン</strong>
+</ul>
+<p>詳細は「<a href="../CommonOperation/index.html">共通操作</a>」を参照してください。</p>
+<ul>
+  <li><a name="A">A</a> : <strong>ターゲット</strong>
+  <li><a name="B">B</a> : <strong>グリップ</strong>
+  <li><a name="C">C</a> : <strong>ポテンシャル</strong>
+  <li><a name="D">D</a> : <strong>力</strong>
+  <li><a name="E">E</a> : <strong>限度</strong>
+</ul>
+<hr>
+<h2><a name="Menu">メニュー</a></h2>
+<p>ウィンドウの上部にあるメニューです。</p>
+<table summary="table" border="0">
+  <tbody>
+    <tr>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#File"><code>File -&gt;</code></a><br>
+            <a href="#View"><code>View -&gt;</code></a><br>
+            <a href="#Window"><code>Window -&gt;</code></a><br>
+            <a href="#Misc"><code>Misc -&gt;</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#File"><code>ファイル -&gt;</code></a><br>
+            <a href="#View"><code>表示 -&gt;</code></a><br>
+            <a href="#Window"><code>ウィンドウ -&gt;</code></a><br>
+            <a href="#Misc"><code>その他 -&gt;</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h3><a name="File">File<br>
+ファイル</a></h3>
+<table summary="table" border="0">
+  <tbody>
+    <tr>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#File_Save-as-Image"><code>Save as Image</code></a><br>
+            <hr>
+            <a href="#File_Quit"><code>Quit</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#File_Save-as-Image"><code>画像として保存</code></a><br>
+            <hr>
+            <a href="#File_Quit"><code>終了</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="File_Save-as-Image">Save as Image<br>
+画像として保存</a></h4>
+<p>ビューアに表示されている状態の画像ファイルを作成します。<br>
+デフォルトのファイル名は、[年月日時分秒].jpgです。</p>
+<p>保存される画像のサンプル</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/yyyymmddhhmmss_sample.jpg"><img src="thumbnails/yyyymmddhhmmss_sample.jpg" width="164" height="164" border="1" alt="yyyymmddhhmmss_sample.jpg"></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="File_Quit">Quit<br>
+終了</a></h4>
+<p>ウィンドウを閉じます。<br>
+このウィンドウに関連した、ビューファインダや設定などのウィンドウも同時に閉じます。</p>
+<hr>
+<h3><a name="View">View<br>
+表示</a></h3>
+<table summary="table" border="0">
+  <tbody>
+    <tr>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#View_Potential"><code>Potential</code></a><br>
+            <a href="#View_Force"><code>Force</code></a><br>
+            <a href="#View_Limit"><code>Limit</code></a><br>
+            <hr>
+            <a href="#View_Reset"><code>Reset</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#View_Potential"><code>ポテンシャル</code></a><br>
+            <a href="#View_Force"><code>力</code></a><br>
+            <a href="#View_Limit"><code>限度</code></a><br>
+            <hr>
+            <a href="#View_Reset"><code>リセット</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="View_Potential">Potential<br>
+ポテンシャル</a></h4>
+<p>ポテンシャル曲線の表示／非表示の設定をします。<br>
+灰色で描かれている曲線です。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/View_Normal.jpg"><img src="thumbnails/View_Normal.jpg" width="179" height="189" border="1" alt="View_Normal.jpg"></a></td>
+            <td class="center-small"><a href="images/View_Potential_off.jpg"><img src="thumbnails/View_Potential_off.jpg" width="179" height="189" border="1" alt="View_Potential_off.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">表示</td>
+            <td class="center-small">非表示</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="View_Force">Force<br>
+力</a></h4>
+<p>力の曲線の表示／非表示の設定をします。<br>
+黒色で描かれている曲線です。<br>
+正の部分がターゲットへの引力、負の部分が斥力になります。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/View_Normal.jpg"><img src="thumbnails/View_Normal.jpg" width="179" height="189" border="1" alt="View_Normal.jpg"></a></td>
+            <td class="center-small"><a href="images/View_Force_off.jpg"><img src="thumbnails/View_Force_off.jpg" width="179" height="189" border="1" alt="View_Force_off.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">表示</td>
+            <td class="center-small">非表示</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="View_Limit">Limit<br>
+限度</a></h4>
+<p>限度の表示／非表示の設定をします。<br>
+青色で描かれている直線です。<br>
+SPIDAR-G で力を出すことのできる範囲です。<br>
+力の関数で、この限度を超えていても、限度までしか力を出しません。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/View_Normal.jpg"><img src="thumbnails/View_Normal.jpg" width="179" height="189" border="1" alt="View_Normal.jpg"></a></td>
+            <td class="center-small"><a href="images/View_Limit_off.jpg"><img src="thumbnails/View_Limit_off.jpg" width="179" height="189" border="1" alt="View_Limit_off.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">表示</td>
+            <td class="center-small">非表示</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="View_Reset">Reset<br>
+リセット</a></h4>
+<p>ビューア内に表示しているものを最適な状態で見られます。</p>
+<hr>
+<h3><a name="Window">Window<br>
+ウィンドウ</a></h3>
+<table summary="table" border="0">
+  <tbody>
+    <tr>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#Window_Settings"><code>Settings</code></a><br>
+            <a href="#Window_Viewfinder"><code>Viewfinder</code></a><br>
+            <a href="#Window_Gauge"><code>Gauge</code></a><br>
+            <a href="#Window_Details"><code>Details</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#Window_Settings"><code>設定</code></a><br>
+            <a href="#Window_Viewfinder"><code>ビューファインダ</code></a><br>
+            <a href="#Window_Gauge"><code>ゲージ</code></a><br>
+            <a href="#Window_Details"><code>詳細</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="Window_Settings">Settings<br>
+設定</a></h4>
+<p>実行条件を設定します。<br>
+詳細は「<a href="../HCVanDerWaalsSettings/index.html" target="_blank">希ガス２分子間の相互作用 - 設定</a>」を参照してください。</p>
+<h4><a name="Window_Viewfinder">Viewfinder<br>
+ビューファインダ</a></h4>
+<p>ビューファインダのウィンドウを開きます。<br>
+詳細は「<a href="../HCVanDerWaalsViewfinder/index.html" target="_blank">希ガス２分子間の相互作用 - ビューファインダ</a>」を参照してください。</p>
+<h4><a name="Window_Gauge">Gauge<br>
+ゲージ</a></h4>
+<p>スパイダー・ゲージのウィンドウを開きます。<br>
+チャートで表示されている力の関数に基づいて、スパイダーに力を提示しています。<br>
+グリップの位置によって、X, Y, Z軸のそれぞれの方向にどれほどの力がかかるのか確認することができます。</p>
+<p>詳細は「<a href="../HCTurboSpidarGauges/index.html" target="_blank">スパイダー・ゲージ</a>」を参照してください。</p>
+<h4><a name="Window_Details">Details<br>
+詳細</a></h4>
+<p>詳細情報の書かれたウィンドウが開きます。</p>
+<ul>
+  <li>van der Waals interaction - ファン・デル・ワールス相互作用<br>
+  ターゲット, グリップの順に原子種を表示します。
+  <li>van der Waals radius - ファン・デル・ワールス半径<br>
+  ターゲットとグリップの原子半径をそれぞれ表示します。
+  <li>Interatomic distance - 原子間距離<br>
+  現在位置でのターゲットとグリップの距離を表示します。
+  <li>Potential energy - ポテンシャルエネルギー<br>
+  現在位置でのポテンシャルエネルギーの数値を表示します。
+  <li>Intermolecular force - 分子間力<br>
+  現在位置での分子間力の数値を表示します。
+</ul>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/Window_Details01.jpg"><img src="thumbnails/Window_Details01.jpg" width="179" height="189" border="1" alt="Window_Details01.jpg"></a></td>
+            <td class="center-small"><a href="images/Window_Details02.jpg"><img src="thumbnails/Window_Details02.jpg" width="122" height="174" border="1" alt="Window_Details02.jpg"></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h3><a name="Misc">Misc<br>
+その他</a></h3>
+<table summary="table" border="0">
+  <tbody>
+    <tr>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#Misc_Manual"><code>Manual</code></a><br>
+            <hr>
+            <a href="#Misc_Inspect"><code>Inspect</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#Misc_Manual"><code>使用手引き</code></a><br>
+            <hr>
+            <a href="#Misc_Inspect"><code>検査</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="Misc_Manual">Manual<br>
+使用手引き</a></h4>
+<p>基本説明、メニュー等の説明が記述してある取扱説明書 (このページ)をブラウザで開きます。</p>
+<h4><a name="Misc_Inspect">Inspect<br>
+検査</a></h4>
+<p>このメニューは、ランタイム版では選択することができません。<br>
+開発時にプログラムの状態などを確認するためのメニューです。<br>
+選択可能な場合は、インスペクタが開きます。</p>
+<hr>
+<p class="align-right"><a href="http://research.nii.ac.jp/~cheminfo/HaptiChem/" target="_blank"><img class="borderless" src="../images/HaptiChemLogo_s.jpg" width="100" height="75" alt="HaptiChem"></a></p>
+</body>
+</html>
