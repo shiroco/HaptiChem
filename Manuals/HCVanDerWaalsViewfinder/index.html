@@ -1,0 +1,436 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="stylesheet" href="../importstyle.css" type="text/css">
+<link rev="made" href="mailto:cheminfo@nii.ac.jp">
+<link rel="index" href="index.html">
+<link rel="shortcut icon" href="../HaptiChem.ico">
+<title>HCVanDerWaalsViewfinder</title>
+</head>
+<body>
+<p class="align-right"><a name="TOP">2007年01月25日</a></p>
+<hr>
+<h1>希ガス２分子間の相互作用 - ビューファインダ</h1>
+<p>もくじ：</p>
+<ul>
+  <li><a href="#About">ビューファインダとは</a>
+  <li><a href="#Open">ビューファインダを開く</a>
+  <li><a href="#Screen">画面</a>
+  <li><a href="#Menu">メニュー</a>
+  <ul>
+    <li><a href="#File">ファイル</a>
+    <ul>
+      <li><a href="#File_Save-as-Image">画像として保存</a>
+      <li><a href="#File_Quit">終了</a>
+    </ul>
+    <li><a href="#View">表示</a>
+    <ul>
+      <li><a href="#View_Target">ターゲット</a>
+      <li><a href="#View_Grip">グリップ</a>
+      <li><a href="#View_Bounding-Box">境界箱</a>
+      <li><a href="#View_Shadows">影</a>
+      <li><a href="#View_Axes">軸</a>
+      <li><a href="#View_Frame">フレーム</a>
+      <li><a href="#View_Strings">糸</a>
+      <li><a href="#View_Reset">リセット</a>
+    </ul>
+    <li><a href="#Misc">その他</a>
+    <ul>
+      <li><a href="#Misc_Inspect">検査</a>
+    </ul>
+  </ul>
+</ul>
+<hr>
+<h2><a name="About">ビューファインダとは</a></h2>
+<p>ここでは、希ガス２分子間の相互作用と連動するビューファインダを解説します。<br>
+SPIDAR-G で操作しているグリップの位置を３次元で表示します。<br>
+影も表示されるので、グリップとターゲットの位置関係を確認するときに便利です。<br>
+SPIDAR-G と接続していないときは、マウスでグリップの位置を移動できます。</p>
+<hr>
+<h2><a name="Open">ビューファインダを開く</a></h2>
+<p>ビューファインダを開くには、「 <a href="../HCVanDerWaalsChart/index.html" target="_blank">希ガス２分子間の相互作用 - チャート</a> 」で 「Window」-&gt;「Viewfinder」メニューを選択します。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/Open_01.jpg"><img src="thumbnails/Open_01.jpg" width="179" height="189" border="1" alt="Open_01.jpg"></a></td>
+            <td class="center-small"><a href="images/Open_02.jpg"><img src="thumbnails/Open_02.jpg" width="179" height="189" border="1" alt="Open_02.jpg"></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h2><a name="Screen">画面</a></h2>
+<h3>画面説明</h3>
+<p>ビューファインダの画面は以下のようになっています。</p>
+<map name="Screen">
+  <area shape="rect" coords="204,442,228,469" href="#D" alt="D">
+  <area shape="rect" coords="10,226,34,253" href="#C" alt="C">
+  <area shape="rect" coords="429,241,451,268" href="#5" alt="5">
+  <area shape="rect" coords="429,187,451,214" href="#4" alt="4">
+  <area shape="rect" coords="132,10,156,37" href="#A" alt="A">
+  <area shape="rect" coords="222,10,245,37" href="#B" alt="B">
+  <area shape="rect" coords="429,148,451,175" href="#3" alt="3">
+  <area shape="rect" coords="429,70,451,97" href="#1" alt="1">
+  <area shape="rect" coords="426,109,454,136" href="#2" alt="2">
+  <area shape="default" nohref alt="nohref">
+</map> <img src="map/HCVanDerWaalsViewfinder.jpg" width="464" height="482" border="0" alt="HCVanDerWaalsViewfinder.jpg" usemap="#Screen">
+<ul>
+  <li><a name="1">1</a> : <strong>ピックボタン</strong>
+  <li><a name="2">2</a> : <strong>グラブボタン</strong>
+  <li><a name="3">3</a> : <strong>ドラッグボタン</strong>
+  <li><a name="4">4</a> : <strong>フォーカスボタン</strong>
+  <li><a name="5">5</a> : <strong>Ｚホィール</strong>
+</ul>
+<ul>
+  <li><a name="A">A</a> : <strong>ターゲット</strong>
+  <li><a name="B">B</a> : <strong>グリップ</strong>
+  <li><a name="C">C</a> : <strong>境界箱</strong>
+  <li><a name="D">D</a> : <strong>影</strong>
+</ul>
+<hr>
+<h2><a name="Menu">メニュー</a></h2>
+<p>ウィンドウの上部にあるメニューです。</p>
+<table summary="table" border="0">
+  <tbody>
+    <tr>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#File"><code>File -&gt;</code></a><br>
+            <a href="#View"><code>View -&gt;</code></a><br>
+            <a href="#Misc"><code>Misc -&gt;</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#File"><code>ファイル -&gt;</code></a><br>
+            <a href="#View"><code>表示 -&gt;</code></a><br>
+            <a href="#Misc"><code>その他 -&gt;</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h3><a name="File">File<br>
+ファイル</a></h3>
+<table summary="table" border="0">
+  <tbody>
+    <tr>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#File_Save-as-Image"><code>Save as Image</code></a><br>
+            <hr>
+            <a href="#File_Quit"><code>Quit</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#File_Save-as-Image"><code>画像として保存</code></a><br>
+            <hr>
+            <a href="#File_Quit"><code>終了</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="File_Save-as-Image">Save as Image<br>
+画像として保存</a></h4>
+<p>ビューアに表示されている状態の画像ファイルを作成します。<br>
+デフォルトのファイル名は、[年月日時分秒].jpgです。</p>
+<p>保存される画像のサンプル</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/yyyymmddhhmmss_sample.jpg"><img src="thumbnails/yyyymmddhhmmss_sample.jpg" width="164" height="164" border="1" alt="yyyymmddhhmmss_sample.jpg"></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="File_Quit">Quit<br>
+終了</a></h4>
+<p>ウィンドウを閉じます。</p>
+<hr>
+<h3><a name="View">View<br>
+表示</a></h3>
+<table summary="table" border="0">
+  <tbody>
+    <tr>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#View_Target"><code>Target</code></a><br>
+            <a href="#View_Grip"><code>Grip</code></a><br>
+            <a href="#View_Bounding-Box"><code>Bounding Box</code></a><br>
+            <a href="#View_Shadows"><code>Shadows</code></a><br>
+            <hr>
+            <a href="#View_Axes"><code>Axes</code></a><br>
+            <a href="#View_Frame"><code>Frame</code></a><br>
+            <a href="#View_Strings"><code>Strings</code></a><br>
+            <hr>
+            <a href="#View_Reset"><code>Reset</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#View_Target"><code>ターゲット</code></a><br>
+            <a href="#View_Grip"><code>グリップ</code></a><br>
+            <a href="#View_Bounding-Box"><code>境界箱</code></a><br>
+            <a href="#View_Shadows"><code>影</code></a><br>
+            <hr>
+            <a href="#View_Axes"><code>軸</code></a><br>
+            <a href="#View_Frame"><code>フレーム</code></a><br>
+            <a href="#View_Strings"><code>糸</code></a><br>
+            <hr>
+            <a href="#View_Reset"><code>リセット</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="View_Target">Target<br>
+ターゲット</a></h4>
+<p>ターゲットの表示／非表示の設定をします。<br>
+分子間力を計算する相手の原子です。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/Open_02.jpg"><img src="thumbnails/Open_02.jpg" width="179" height="189" border="1" alt="Open_02.jpg"></a></td>
+            <td class="center-small"><a href="images/View_Target_off.jpg"><img src="thumbnails/View_Target_off.jpg" width="179" height="189" border="1" alt="View_Target_off.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">表示</td>
+            <td class="center-small">非表示</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="View_Grip">Grip<br>
+グリップ</a></h4>
+<p>グリップの表示／非表示の設定をします。<br>
+グリップは、自分が操作して、位置を移動することのできるオブジェクトです。<br>
+ここでは、分子間力を計算する原子になります。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/Open_02.jpg"><img src="thumbnails/Open_02.jpg" width="179" height="189" border="1" alt="Open_02.jpg"></a></td>
+            <td class="center-small"><a href="images/View_Grip_off.jpg"><img src="thumbnails/View_Grip_off.jpg" width="179" height="189" border="1" alt="View_Grip_off.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">表示</td>
+            <td class="center-small">非表示</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="View_Bounding-Box">Bounding Box<br>
+境界箱</a></h4>
+<p>境界箱の表示／非表示の設定をします。<br>
+SPIDAR-G でグリップを動かすことのできる範囲です。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/Open_02.jpg"><img src="thumbnails/Open_02.jpg" width="179" height="189" border="1" alt="Open_02.jpg"></a></td>
+            <td class="center-small"><a href="images/View_Bounding-Box_off.jpg"><img src="thumbnails/View_Bounding-Box_off.jpg" width="179" height="189" border="1" alt="View_Bounding-Box_off.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">表示</td>
+            <td class="center-small">非表示</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="View_Shadows">Shadows<br>
+影</a></h4>
+<p>影の表示／非表示の設定をします。<br>
+ターゲットとグリップの位置が、境界箱の面上に影として表示されます。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/Open_02.jpg"><img src="thumbnails/Open_02.jpg" width="179" height="189" border="1" alt="Open_02.jpg"></a></td>
+            <td class="center-small"><a href="images/View_Shadows_off.jpg"><img src="thumbnails/View_Shadows_off.jpg" width="179" height="189" border="1" alt="View_Shadows_off.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">表示</td>
+            <td class="center-small">非表示</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="View_Axes">Axes<br>
+軸</a></h4>
+<p>軸の表示／非表示の設定をします。<br>
+X軸, Y軸, Z軸の方向が分かります。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/View_Axes_on.jpg"><img src="thumbnails/View_Axes_on.jpg" width="179" height="189" border="1" alt="View_Axes_on.jpg"></a></td>
+            <td class="center-small"><a href="images/Open_02.jpg"><img src="thumbnails/Open_02.jpg" width="179" height="189" border="1" alt="Open_02.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">表示</td>
+            <td class="center-small">非表示</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="View_Frame">Frame<br>
+フレーム</a></h4>
+<p>フレームの表示／非表示の設定をします。<br>
+SPIDAR-G のフレームがどのあたりにあるのかが分かります。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/View_Frame_on.jpg"><img src="thumbnails/View_Frame_on.jpg" width="179" height="189" border="1" alt="View_Frame_on.jpg"></a></td>
+            <td class="center-small"><a href="images/Open_02.jpg"><img src="thumbnails/Open_02.jpg" width="179" height="189" border="1" alt="Open_02.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">表示</td>
+            <td class="center-small">非表示</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="View_Strings">Strings<br>
+糸</a></h4>
+<p>糸の表示／非表示の設定をします。<br>
+SPIDAR-G の糸がどのあたりにあるのかが分かります。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/View_Strings_on.jpg"><img src="thumbnails/View_Strings_on.jpg" width="179" height="189" border="1" alt="View_Strings_on.jpg"></a></td>
+            <td class="center-small"><a href="images/Open_02.jpg"><img src="thumbnails/Open_02.jpg" width="179" height="189" border="1" alt="Open_02.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">表示</td>
+            <td class="center-small">非表示</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="View_Reset">Reset<br>
+リセット</a></h4>
+<p>ビューア内に表示しているものの全体が見られます。</p>
+<hr>
+<h3><a name="Misc">Misc<br>
+その他</a></h3>
+<table summary="table" border="0">
+  <tbody>
+    <tr>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#Misc_Inspect"><code>Inspect</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#Misc_Inspect"><code>検査</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="Misc_Inspect">Inspect<br>
+検査</a></h4>
+<p>このメニューは、ランタイム版では選択することができません。<br>
+開発時にプログラムの状態などを確認するためのメニューです。<br>
+選択可能な場合は、インスペクタが開きます。</p>
+<hr>
+<p class="align-right"><a href="http://research.nii.ac.jp/~cheminfo/HaptiChem/" target="_blank"><img class="borderless" src="../images/HaptiChemLogo_s.jpg" width="100" height="75" alt="HaptiChem"></a></p>
+</body>
+</html>
