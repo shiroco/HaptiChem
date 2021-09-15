@@ -45,7 +45,8 @@ References
 1. Satoh, H.; Nukada, T.; Akahane, K.; Sato, M. Development of Haptic Molecular Modeling System for Chemical Education. 28th Symposium on Chemical Information and Computer-Sciences, Osaka, Japan, November, 2005.
 2. Satoh, H.; Aoki, A.; Asaoka, H. ChemoJun and HaptiChem: Visualization and Touching for Knowing Chemistry. The 13th German-Japanese Workshop on Chemical Information, Tokyo, Japan, May, 2006.
 3. Satoh, H.; Nukada, T.; Akahane, K.; Sato, M. Construction of Basic Haptic Systems for Feeling the Intermolecular Force in Molecular Models. J. Comput. Aided Chem., 7, 38-47 (2006) https://www.jstage.jst.go.jp/article/jcac/7/0/7_0_38/_article/-char/en
-4. Satoh, H. Haptic Molecular Modeling for Chemical Education. Kaken-hi Grant News, 2, 6-6 (2007) https://www.jsps.go.jp/j-grantsinaid/22_letter/data/news_2007_vol2/p06.pdf
+4. Satoh, H. HaptiChem: Haptic Molecular Modeling System and ChemoJun: Chemical Graphics Library for Chemical Education. 54th Meeting of High Schools of Tokyo Area, Tokyo, Japan, July, 2006.
+5. Satoh, H. Haptic Molecular Modeling for Chemical Education. Kaken-hi Grant News, 2, 6-6 (2007) https://www.jsps.go.jp/j-grantsinaid/22_letter/data/news_2007_vol2/p06.pdf
 
 **********
 
