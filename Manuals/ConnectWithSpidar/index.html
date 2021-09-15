@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="stylesheet" href="../importstyle.css" type="text/css">
+<link rev="made" href="mailto:cheminfo@nii.ac.jp">
+<link rel="index" href="index.html">
+<link rel="shortcut icon" href="../HaptiChem.ico">
+<title>ConnectWithSpidar</title>
+</head>
+<body>
+<p class="align-right"><a name="TOP">2007年01月25日</a></p>
+<hr>
+<h1>SPIDAR-G 接続</h1>
+<p>もくじ：</p>
+<ul>
+  <li><a href="#Prologue">はじめに</a>
+  <li><a href="#Connection">使用前の手順</a>
+  <li><a href="#Operation">使用中の操作</a>
+  <li><a href="#Disconnection">使用後の手順</a>
+  <li><a href="#Trouble">困ったときは</a>
+</ul>
+<hr>
+<h2><a name="Prologue">はじめに</a></h2>
+<div class="indent">
+<p>SPIDAR-G、<strong>HDHC</strong>：高解像度ハプティックコントローラ(High Definition Haptic Controller)、ホストコンピュータを接続して、SPIDAR-G
+を利用する準備を行います。<br>
+接続する前に、必ずインストールマニュアルを見て、HDHC を動作させるのに必要なデバイスドライバなどをインストールしてください。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><img src="originals/SPIDAR.jpg" width="231" height="126" border="0" alt="SPIDAR.jpg"></td>
+          </tr>
+          <tr>
+            <td class="center-small">HDHC と SPIDAR-G</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>SPIDAR-Gに附属しているマニュアルも参照してください。</p>
+</div>
+<hr>
+<h2><a name="Connection">使用前の手順</a></h2>
+<div class="indent">
+<p>以下の手順で、SPIDAR-G、HDHC、ホストコンピュータを接続してください。</p>
+<ol>
+  <li><strong>HDHC と SPIDAR-G を接続する</strong>
+  <p>エンコーダ入力端子とモータ出力端子を接続します。<br>
+  それぞれ８本ありますので、番号を間違えないように注意してください。</p>
+  <li><strong>HDHC の主電源、モータ出力スイッチがオフであることを確認する</strong>
+  <p>主電源は HDHC の後側（電源やUSB2.0の差込口がある側）にあります。<br>
+  モータ出力スイッチは HDHC の前側（エンコーダ入力端子とモータ出力端子の差込口がある側）にあります。</p>
+  <li><strong>HDHC の専用電源アダプター（5V 電源 + 24V 電源）をコンセントに接続する</strong>
+  <p>必ず事前に HDHC の電源がオフになっていることを確認して、プラグをコンセントに差してください。</p>
+  <li><strong>ホストコンピュータを起動する</strong>
+  <p>通常通り、起動してください。<br>
+  USB2.0 ケーブルが差さったままだと起動しない場合がありますので、SPIDAR-G 関連のものが接続されていない状態で起動してください。</p>
+  <li><strong>HDHCのUSB2.0ケーブルを、USBハブなどを介さず、直接ホストコンピュータと接続する。</strong>
+  <p>処理速度が遅くならないよう、必ず直接接続してください。</p>
+  <li><strong>HDHC の主電源をオンにする</strong>
+  <p>HDHC の後側（電源やUSB2.0の差込口がある側）のスイッチです。</p>
+  <li><strong>デバイスドライバが認識されることを確認する</strong>
+  <p>「マイコンピュータ -&gt; 右クリックメニュー -&gt; 管理」を選ぶと、 「コンピュータの管理」のウィンドウが開きます。<br>
+  ウィンドウ内で、 「コンピュータの管理（ローカル） -&gt; システム ツール -&gt; デバイスマネージャ」 を選択します。<br>
+  右側に表示されるビュー内で、 「$(マシン名) -&gt; USB (Universal Serial Bus) コントローラ」を一覧させます。<br>
+  「SPIDAR SH4」と書かれているものが正常に表示されていれば、OK です。</p>
+  <p><img src="originals/DriverConfirm01.jpg" width="638" height="452" border="1" alt="DriverConfirm01.jpg"></p>
+  <li><strong>HDHC のモータ出力スイッチをオンにする</strong>
+  <p>SPIDAR-G に力が出せる状態になります。</p>
+  <li><strong>HaptiChem システムを起動する</strong>
+  <p>起動後、ランチャーからアプリケーションを起動すると、HDHC に情報が送信されます。<br>
+  SPIDAR-G の糸が最低張力で引っ張られます。</p>
+  <table class="belt" summary="table">
+    <tbody>
+      <tr>
+        <td>
+        <table class="content" summary="table">
+          <tbody>
+            <tr>
+              <td class="center-small"><img src="originals/Tools_Spidar-Viewfinder01.jpg" width="203" height="177" border="1" alt="Tools_Spidar-Viewfinder01.jpg"></td>
+              <td class="center-small"><img src="originals/SH4ProgramSend01.jpg" width="234" height="87" border="1" alt="SH4ProgramSend01.jpg"></td>
+              <td class="center-small"><img src="originals/SH4ProgramSend02.jpg" width="234" height="87" border="1" alt="SH4ProgramSend02.jpg"></td>
+            </tr>
+          </tbody>
+        </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>キャリブレーションも自動的に行われます。<br>
+  グリップを中心に持って行って、OKボタンを押してください。<br>
+  これで SPIDAR-G を利用してアプリケーションを操作できます。</p>
+  <table class="belt" summary="table">
+    <tbody>
+      <tr>
+        <td>
+        <table class="content" summary="table">
+          <tbody>
+            <tr>
+              <td class="center-small"><img src="originals/Calibration.jpg" width="358" height="377" border="1" alt="Calibration.jpg"></td>
+            </tr>
+          </tbody>
+        </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</ol>
+</div>
+<hr>
+<h2><a name="Operation">使用中の操作</a></h2>
+<div class="indent">
+<p>SPIDAR-G を快適に利用するために、必要に応じて以下のことを行ってください。</p>
+<ul>
+  <li><strong>SPIDAR-G の糸を巻き直す</strong>
+  <p>糸がたるんでいると、力が正常に提示されません。<br>
+  使い始めは糸がゆるんでいることがありますので、一度全ての糸を引っ張りだし、モータに巻き付け直すことをおすすめします。<br>
+  使用している最中も、糸の巻き取り具合がおかしくなったら、巻き直しを行ってください。</p>
+  <li><strong>キャリブレーションをする</strong>
+  <p>ツールを利用しはじめる際に、自動的に行っていますが、必要に応じて何度も実行して構いません。<br>
+  糸の巻き直しをした後は、必ずキャリブレーションをして初期化を行ってください。<br>
+  また操作をしている最中に挙動がおかしくなった場合は、力の提示をやめてキャリブレーションしてください。</p>
+</ul>
+</div>
+<hr>
+<h2><a name="Disconnection">使用後の手順</a></h2>
+<div class="indent">
+<p>以下の手順で、HDHC とホストコンピュータの接続を解除してください。<br>
+SPIDAR-G と HDHC との接続は、必要に応じて外してください。</p>
+<ol>
+  <li><strong>HaptiChem システムを終了する</strong>
+  <p>まず、HaptiChem システムを終了してください。<br>
+  アプリケーションが起動している状態で、先に HDHC の電源を切ると、システムが正常に動かなくなります。</p>
+  <li><strong>HDHC のモータ出力スイッチをオフにする</strong>
+  <p>SPIDAR-G の糸がたるみます。</p>
+  <li><strong>HDHC の主電源をオフにする</strong>
+  <p>忘れずに切ってください。</p>
+  <li><strong>USB2.0 ケーブルをホストコンピュータから外す</strong>
+  <p>これで、ホストコンピュータと HDHC の接続が解除できます。<br>
+  必要に応じて、他のケーブル等を外します。</p>
+</ol>
+</div>
+<hr>
+<h2><a name="Trouble">困ったときは</a></h2>
+<div class="indent">
+<p>異常を感じたら、すぐに使用を中止してください。</p>
+<ul>
+  <li><strong>HDHC のモータ出力スイッチを切る</strong>
+  <p>SPIDAR-G を利用している時に、無理な力が出過ぎた場合、モータが焼けてしまいます。<br>
+  異常を感じたら、すぐにモータ出力スイッチをオフしてください。<br>
+  モータ出力スイッチは HDHC の前側（エンコーダ入力端子とモータ出力端子の差込口がある側）にあります。</p>
+  <li><strong>HaptiChem システムを強制終了する</strong>
+  <p>HatpiChem システムがフリーズしてしまった場合は、タスクマネージャで「visual.exe」のプロセスを終了して、HaptiChem
+  システムを終了してください。</p>
+  <table class="belt" summary="table">
+    <tbody>
+      <tr>
+        <td>
+        <table class="content" summary="table">
+          <tbody>
+            <tr>
+              <td class="center-small"><img src="originals/TaskManager01.jpg" width="170" height="177" border="1" alt="TaskManager01.jpg"></td>
+              <td class="center-small">タスクマネージャは、「Ctrl」+「Alt」+「Delete」キーか、<br>
+              タスクバーの右メニューから 開くことができます。</td>
+            </tr>
+            <tr>
+              <td class="center-small" colspan="2"><img src="originals/TaskManager02.jpg" width="470" height="417" border="1" alt="TaskManager02.jpg"></td>
+            </tr>
+          </tbody>
+        </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</ul>
+</div>
+<hr>
+<p class="align-right"><a href="http://research.nii.ac.jp/~cheminfo/HaptiChem/" target="_blank"><img class="borderless" src="../images/HaptiChemLogo_s.jpg" width="100" height="75" alt="HaptiChem"></a></p>
+</body>
+</html>

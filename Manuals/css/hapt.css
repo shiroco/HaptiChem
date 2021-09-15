@@ -1,0 +1,46 @@
+/* ******************************* */
+/*  hapt.css                       */
+/*  Created: 2006.02.16            */
+/*  Updated: 2007.01.16            */
+/* ******************************* */
+@charset "Shift_JIS";
+
+.molecule {
+  color: #000000;
+  background-color: #FFCCFF;
+  border-style: solid;
+  border-color: #FFCCFF;
+  border-width: 2px 2px 2px 2px;
+}
+
+.electro {
+  color: #000000;
+  background-color: #FFFF80;
+  border-style: dotted;
+  border-color: #FFFF80;
+  border-width: 2px 2px 2px 2px;
+}
+
+.steric {
+  color: #000000;
+  background-color: #AAFFFF;
+  border-style: double;
+  border-color: #AAFFFF;
+  border-width: 2px 2px 2px 2px;
+}
+
+.p1 {
+  color: #00FFFF;
+  background-color: transparent;
+}
+
+.p2 {
+  color: #FF00FF;
+  background-color: transparent;
+}
+
+.p3 {
+  color: #FFFF00;
+  background-color: transparent;
+}
+
