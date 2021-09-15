@@ -1,0 +1,187 @@
+;High Definition Haptic Controller
+;SPIDAR-G/AHS1.0A System Information File
+;
+;	Katsuhito AKAHANE (2005/05/27)
+;	Atsushi Aoki (2006/09/04)
+;
+;	file name: SPIDAR_G6_ASH_10_R.txt
+;
+; motor: maxon RE-max 271107
+;
+; SPIDAR-G/ASH1.0A R [for Right Hand]
+;
+
+
+; Motor Position (coordinates of each wire exit point)[m]
+:mpos 8
+0 -0.085 -0.075  0.0
+1  0.0   -0.075  0.085
+2  0.085 -0.075  0.0
+3  0.0   -0.075 -0.085
+4 -0.085  0.075  0.0
+5  0.0    0.075  0.085
+6  0.085  0.075  0.0
+7  0.0    0.075 -0.085
+
+
+; Coordinates of Wires Attached to Haptic Pointer (at home position)[m]
+:gpos 8
+0 -0.014142135624   0.0  -0.014142135624
+1  0.014142135624   0.0   0.014142135624
+2  0.0  -0.020  0.0
+3  0.0  -0.020  0.0
+4 -0.014142135624   0.0  -0.014142135624
+5  0.014142135624   0.0   0.014142135624
+6  0.0   0.020  0.0
+7  0.0   0.020  0.0
+
+
+; Electric amp
+;[A/N]
+:apn 8 
+0 0.05
+1 0.05
+2 0.05
+3 0.05
+4 0.05
+5 0.05
+6 0.05
+7 0.05
+
+
+;Value of D/A (depend on the motor driver) [HEX/A]
+:hpa 8
+0 843.66443f
+1 840.358952f
+2 840.69132f
+3 835.013029f
+4 838.469045f
+5 838.843762f
+6 838.602128f
+7 840.116945f
+
+; Wire Length by Encoder Pulse [m/pulse]
+:lpp 8
+0 2.924062107079e-5f
+1 2.924062107079e-5f
+2 2.924062107079e-5f
+3 2.924062107079e-5f
+4 2.924062107079e-5f
+5 2.924062107079e-5f
+6 2.924062107079e-5f
+7 2.924062107079e-5f
+
+
+; Necessary Voltage to get A/D Unit Value (28.0f/4096.0f)
+:vph 8
+0 6.8359375e-3f
+1 6.8359375e-3f
+2 6.8359375e-3f
+3 6.8359375e-3f
+4 6.8359375e-3f
+5 6.8359375e-3f
+6 6.8359375e-3f
+7 6.8359375e-3f
+
+; Maximal Voltage of Motors[v]
+:maxVolt 8
+0 24.0f
+1 24.0f
+2 24.0f
+3 24.0f
+4 24.0f
+5 24.0f
+6 24.0f
+7 24.0f
+
+
+; Wire Minimal Tension [N]
+:minF 8 
+0 0.75f
+1 0.75f
+2 0.75f
+3 0.75f
+4 0.75f
+5 0.75f
+6 0.75f
+7 0.75f
+
+; Wire Maximal Tension [N]
+:maxF 8
+0 20.0f
+1 20.0f
+2 20.0f
+3 20.0f
+4 20.0f
+5 20.0f
+6 20.0f
+7 20.0f
+
+; Motor Torque Constants[mNm/A]
+:mNm/A 8
+0 43.8f
+1 43.8f
+2 43.8f
+3 43.8f
+4 43.8f
+5 43.8f
+6 43.8f
+7 43.8f
+
+; Motor Inductances [mH]
+:mH 8
+0 0.83f
+1 0.83f
+2 0.83f
+3 0.83f
+4 0.83f
+5 0.83f
+6 0.83f
+7 0.83f
+
+; Motor Resistances [ohm]
+:ohm 8
+0 7.73f
+1 7.73f
+2 7.73f
+3 7.73f
+4 7.73f
+5 7.73f
+6 7.73f
+7 7.73f
+
+; Motor Rotation Frequency [rpm/V]
+:rpm/v 8
+0 218.0f
+1 218.0f
+2 218.0f
+3 218.0f
+4 218.0f
+5 218.0f
+6 218.0f
+7 218.0f
+
+;Pulley Radius [mm]
+:pulleyRadius 8
+0 5.0f
+1 5.0f
+2 5.0f
+3 5.0f
+4 5.0f
+5 5.0f
+6 5.0f
+7 5.0f
+
+
+;Phase Sequence of Encoders
+; a (, A or 0) : A phase rotation type
+; b (, B or 1) : B phase rotation type
+:phs 8
+0 a
+1 a
+2 b
+3 b
+4 b
+5 b
+6 a
+7 a
