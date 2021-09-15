@@ -1,0 +1,200 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="stylesheet" href="../importstyle.css" type="text/css">
+<link rev="made" href="mailto:cheminfo@nii.ac.jp">
+<link rel="index" href="index.html">
+<link rel="shortcut icon" href="../HaptiChem.ico">
+<title>InstallHaptiChemRT</title>
+</head>
+<body>
+<p class="align-right"><a name="TOP">2007年01月25日</a></p>
+<hr>
+<h1>HaptiChem システムのインストール（ランタイム版）</h1>
+<p>もくじ：</p>
+<ul>
+  <li><a href="#Prologue">はじめに</a>
+  <li><a href="#Preparations">準備するもの</a>
+  <li><a href="#RTInstall">インストール</a>
+  <li><a href="#RTStart">起動方法</a>
+  <li><a href="#RTEnd">終了方法</a>
+  <li><a href="#RTjapanese">日本語表示と英語表示の切り替え方法</a>
+</ul>
+<hr>
+<h2><a name="Prologue">はじめに</a></h2>
+<div class="indent">
+<p>HaptiChemシステムをインストールすると、分子間力を計算して関数の形を表示するツールなどを利用できます。<br>
+SPIDAR-G を併せて利用すれば、３次元空間での位置の指定がしやすく、さらに分子間力を体感できます。<br>
+SPIDAR-G がなくても、マウスで位置の操作は可能です。</p>
+</div>
+<hr>
+<h2><a name="Preparations">準備するもの</a></h2>
+<ul>
+  <li>QuickTime by Apple
+  <p>HaptiChemシステムでは、QuickTime を利用して、映像や音声などのマルチメディアを扱っています。<br>
+  QuickTime がインストールされていない場合、個別にインストールする必要があります。<br>
+  すでにインストールされている場合でも、QuickTime の環境設定を確認しておきましょう。<br>
+  詳細は <a href="http://www.sra.co.jp/people/h-asaoka/study/QuickTimeInstall/index.html" target="_blank">QuickTime インストール</a> を参照してください。</p>
+  <li>HaptiChemシステム（ランタイム版）
+  <p>以下のいずれかの「HaptiChem」のランタイム版ファイルが必要となります。<br>
+  好きな環境のものを選んでください。<br>
+  注：（）内の ??? は、000 もしくはバージョン番号になります。</p>
+  <ul>
+    <li>Windows - 英語版：<br>
+    HaptiChem???WinRTe.zip
+    <li>Windows - 日本語版：<br>
+    HaptiChem???WinRTj.zip
+  </ul>
+</ul>
+<hr>
+<h2><a name="RTInstall">インストール</a></h2>
+<div class="indent">
+<p>「HaptiChem」の ランタイム版ファイル を用意します。</p>
+<p>ランタイム版ファイル をハードディスクの中の適当なディレクトリに展開します。<br>
+展開すると、次のようなフォルダやファイルが作成されます。</p>
+<p><strong>Windows - 英語版</strong></p>
+<div class="indent">
+<pre class="win">HaptiChem???WinRTe
+    +- ChemoJunMolData/
+    |   +- *folders*/
+    |        +- *.mol
+    |        +- *.2D.mol
+    +- glu32.dll
+    +- HaptiChem???RT.im
+    +- HaptiChem.dll
+    +- herald.bmp
+    +- herald.wav
+    +- <strong>IHCSpidarG.mot</strong> ※１
+    +- JunWinQT.dll
+    +- opengl32.dll
+    +- ReadMe.txt
+    +- <strong>SPIDAR_G6_ASH_10_L.txt</strong> ※１
+    +- <strong>SPIDAR_G6_ASH_10_R.txt</strong> ※１
+    +- visual.bat
+    +- visual.exe</pre>
+<p>※１のファイルは、SPIDAR-G を接続する場合、API ソフトウェアのインストールディレクトリから同名ファイル（実際に利用するSPIDAR-G
+の設定のもの）をコピーして、上書きしてください。</p>
+</div>
+<p><strong>Windows - 日本語版</strong></p>
+<div class="indent">
+<p>上記の「Windows - 英語版」に加えて、下記のフォルダがあります。</p>
+<pre class="win">HaptiChem???WinRTj
+    +- ja/
+        +- chemoJunDictionary.idx
+        +- chemoJunDictionary.lbl
+        +- hcDictionary.idx
+        +- hcDictionary.lbl
+        +- junDictionary.idx
+        +- junDictionary.lbl</pre>
+</div>
+<p>圧縮ファイルがマウントされた状態ではなく、必ずハードディスク内に上記のフォルダをコピーしてください。<br>
+このフォルダを「ランタイム版ディレクトリ」とします。<br>
+これでインストールは終了です。</p>
+</div>
+<hr>
+<h2><a name="RTStart">起動方法</a></h2>
+<div class="indent">
+<p>以下のように起動します。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td class="win">
+      <p>ランタイム版ディレクトリ内にあるバッチファイル「visual.bat」 をダブルクリックして、起動します。</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>起動すると、スクリーンの左上にHaptiChemランチャーが出現します。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><img src="originals/WinHaptiChemLauncherE.jpg" width="203" height="177" border="1" alt="WinHaptiChemLauncherE.jpg"></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<hr>
+<h2><a name="RTEnd">終了方法</a></h2>
+<div class="indent">
+<p>終了するにはHaptiChemランチャーのウィンドウを閉じます。<br>
+ランチャーの「×」アイコンをクリックします。<br>
+本当に終了するかどうかの確認ダイアログが出ますので、問いに答えて終了してください。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><img src="originals/WinLauncher_closeDialog.jpg" width="174" height="82" border="1" alt="WinLauncher_closeDialog.jpg"></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<hr>
+<h2><a name="RTjapanese">日本語表示と英語表示の切り替え方法</a></h2>
+<div class="indent">
+<p>日本語版のメニューやメッセージは、デフォルトで日本語になっています。<br>
+ランタイム版ディレクトリの直下にある「ja」ディレクトリを移動させることで、メニューなどを日本語と英語に切り替えることができます。</p>
+<p><strong>英語表示にする場合</strong></p>
+<div class="indent">
+<p>システムを起動中の場合は、終了しておきます。<br>
+「ja」のディレクトリを他の場所へ移動します。<br>
+システムを起動すると、英語表示になります。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><img src="originals/WinHaptiChemLauncherE.jpg" width="203" height="177" border="1" alt="WinHaptiChemLauncherE.jpg"></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p><strong>日本語表示にする場合</strong></p>
+<div class="indent">
+<p>システムを起動中の場合は、終了しておきます。<br>
+「ja」のディレクトリをランタイム版ディレクトリの直下に戻します。<br>
+システムを起動すると、日本語表示になります。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><img src="originals/WinHaptiChemLauncherJ.jpg" width="203" height="177" border="1" alt="WinHaptiChemLauncherJ.jpg"></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p class="attention">※「ja」のディレクトリを移動する際は、必ず起動中のシステムを終了させてから行ってください。</p>
+</div>
+<hr>
+<p class="align-right"><a href="http://research.nii.ac.jp/~cheminfo/HaptiChem/" target="_blank"><img class="borderless" src="../images/HaptiChemLogo_s.jpg" width="100" height="75" alt="HaptiChem"></a></p>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="stylesheet" href="../importstyle.css" type="text/css">
+<link rev="made" href="mailto:cheminfo@nii.ac.jp">
+<link rel="index" href="index.html">
+<link rel="shortcut icon" href="../HaptiChem.ico">
+<title>InstallSpidar</title>
+</head>
+<body>
+<p class="align-right"><a name="TOP">2007年01月25日</a></p>
+<hr>
+<h1>SPIDAR-G を利用するのに必要なインストール</h1>
+<p>もくじ：</p>
+<ul>
+  <li><a href="#Driver">デバイスドライバ</a>
+  <ul>
+    <li><a href="#DriverInstall">デバイスドライバのインストール</a>
+    <li><a href="#DriverConfirmation">デバイスドライバの確認</a>
+  </ul>
+  <li><a href="#Tester">API ソフトウェア</a>
+  <ul>
+    <li><a href="#TesterInstall">API ソフトウェアのインストール</a>
+    <li><a href="#TesterConfirmation">API ソフトウェアの確認</a>
+    <li><a href="#TesterUninstall">API ソフトウェアのアンインストール</a>
+  </ul>
+</ul>
+<hr>
+<h2><a name="Driver">デバイスドライバ</a></h2>
+<h3><a name="DriverInstall">デバイスドライバのインストール</a></h3>
+<div class="indent">
+<p>まず、デバイスドライバのインストールを行います。<br>
+詳細は、SPIDAR-Gに附属しているマニュアルを参照してください。</p>
+</div>
+<h3><a name="DriverConfirmation">デバイスドライバの確認</a></h3>
+<div class="indent">
+<p>正常にデバイスドライバが認識されているか確認します。</p>
+<p>以下の手順で、<strong>HDHC</strong>：高解像度ハプティックコントローラ(High Definition Haptic Controller)とホストコンピュータを接続してください。</p>
+<ul>
+  <li>HDHCの主電源、モータ出力スイッチがオフであることを確認する。
+  <li>ホストコンピュータを起動する。
+  <li>HDHCのUSB2.0ケーブルを、USBハブなどを介さず、直接ホストコンピュータと接続する。
+  <li>HDHCの主電源をオンにする。
+</ul>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><img src="originals/SPIDAR.jpg" width="231" height="126" border="0" alt="SPIDAR.jpg"></td>
+          </tr>
+          <tr>
+            <td class="center-small">HDHC と SPIDAR-G</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>この状態で、デバイスドライバが認識されているかを確認します。</p>
+<p>「マイコンピュータ -&gt; 右クリックメニュー -&gt; 管理」を選ぶと、 「コンピュータの管理」のウィンドウが開きます。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><img src="originals/MyConputerMenu.jpg" width="275" height="234" border="0" alt="MyConputerMenu.jpg"></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>ウィンドウ内で、 「コンピュータの管理（ローカル） -&gt; システム ツール -&gt; デバイスマネージャ」 のタグを選択します。<br>
+右側に表示されるビュー内で、 「$(マシン名) -&gt; USB (Universal Serial Bus) コントローラ」を一覧させます。<br>
+「SPIDAR SH4」と書かれているものが正常に表示されていれば、OK です。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><img src="originals/DriverConfirm01.jpg" width="638" height="452" border="1" alt="DriverConfirm01.jpg"></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>上記で表示された「SPIDAR SH4」の右クリックメニューで「プロパティ」を選ぶと、デバイスドライバの状態を確認できます。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><img src="originals/DriverConfirm02.jpg" width="292" height="134" border="1" alt="DriverConfirm02.jpg"></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/DriverConfirm03.jpg"><img src="thumbnails/DriverConfirm03.jpg" width="235" height="208" border="1" alt="DriverConfirm03.jpg"></a></td>
+            <td class="center-small"><a href="images/DriverConfirm04.jpg"><img src="thumbnails/DriverConfirm04.jpg" width="235" height="208" border="1" alt="DriverConfirm04.jpg"></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>「ドライバ」タグで、「ドライバの更新...」ボタンを押し、 新しいデバイスドライバを指定すると、ドライバのアップデートを行います。</p>
+<p>「ドライバ」タグで、「削除」ボタンを押すと、ドライバのアンインストールを行います。</p>
+<p>確認後、SPIDAR-GとPCとの接続を解除する場合は、以下の手順で行ってください。</p>
+<ul>
+  <li>HDHCの主電源をオフにする。
+  <li>HDHCのUSBケーブルを、ホストコンピュータから外す。
+</ul>
+</div>
+<hr>
+<h2><a name="Tester">API ソフトウェア</a></h2>
+<h3><a name="TesterInstall">API ソフトウェアのインストール</a></h3>
+<div class="indent">
+<p>API ソフトウェアのインストールを行います。<br>
+（これより先に、必ずデバイスドライバのインストールを行ってください。）<br>
+詳細は、SPIDAR-Gに附属しているマニュアルを参照してください。</p>
+</div>
+<h3><a name="TesterConfirmation">API ソフトウェアの確認</a></h3>
+<div class="indent">
+<p>デフォルトのインストール先ディレクトリは、以下になります。</p>
+<pre> C:\Program Files\Titech\SKLab\HDHC10A\</pre>
+<p>インストールが完了すると、インストール先ディレクトリには、 以下のようなフォルダやファイルが作成されます。</p>
+<pre>$(インストール先ディレクトリ)
+    +- bin/
+    |    +- Sample/
+    |    +- *.exe
+    +- data/
+    |    +- SPIDAR_G6_ASH_10_L.txt
+    |    +- SPIDAR_G6_ASH_10_R.txt
+    |    +- SPIDAR_G6_ASH_10B_L.txt
+    +- doc/
+    |    +- API/
+    |    +- img/
+    |    +- *.htm
+    |    +- *.pdf
+    +- include/
+    |    +- *.h
+    +- lib/
+    |    +- *.lib
+    +- mot/
+    |    +- IHCSpidarG.mot
+    +- sample/
+    |    +- SpidarG_EX01/
+    |    +- SpidarG_EX02/
+    +- license.rtf
+    +- license_eng.rtf</pre>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><img src="originals/TesterConfirmation_InstallDirectory.jpg" width="551" height="342" border="1" alt="TesterConfirmation_InstallDirectory.jpg"></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>また、「スタートメニュー -&gt; プログラム」に、以下のようなメニューが追加されます。<br>
+ここからインストール先ディレクトリのドキュメントを参照したり、 テストプログラムを起動できます。</p>
+<pre>SPIDAR AHS
+    +- API Manual
+    |    +- SPIDAR-G AHS1.0A API Manual (英語)
+    |    +- SPIDAR-G AHS1.0A API マニュアル (日本語)
+    +- Sample
+    |    +- SPIDAR-G_EX01
+    |    +- SPIDAR-G_EX02
+    +- User's Manual
+    |    +- SPIDAR-G AHS1.0A User's Manual (英語)
+    |    +- SPIDAR-G AHS1.0A ユーザーズマニュアル (日本語)
+    +- Wire Geometry Manual
+    |    +- SPIDAR-G AHS1.0A Left Hand (英語)
+    |    +- SPIDAR-G AHS1.0A Right Hand (英語)
+    |    +- SPIDAR-G AHS1.0A 右手　接続図 (日本語)
+    |    +- SPIDAR-G AHS1.0A 左手　接続図 (日本語)
+    +- SPIDAR-G AHS1.0A Test Program (英語)
+    +- SPIDAR-G AHS1.0A テストプログラム (日本語)</pre>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><img src="originals/TesterConfirmation_ProgramMenu.jpg" width="656" height="136" border="0" alt="TesterConfirmation_ProgramMenu.jpg"></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<h3><a name="TesterUninstall">API ソフトウェアのアンインストール</a></h3>
+<div class="indent">
+<p>「スタートメニュー -&gt; 設定 -&gt; コントロールパネル」で、 「プログラムの追加と削除（Windows XP）」もしくは「アプリケーションの追加と削除（Windows
+2000）」を選びます。<br>
+「SPIDAR-G/AHS1.0A」と表示されているものを選び、「削除」ボタンを押します。</p>
+<p>インストールする際に、「このユーザのみ」をチェックした場合は、そのユーザでないとアンインストールできません。<br>
+「すべてのユーザ」をチェックした場合は、誰でもアンインストール可能です。</p>
+</div>
+<hr>
+<p class="align-right"><a href="http://research.nii.ac.jp/~cheminfo/HaptiChem/" target="_blank"><img class="borderless" src="../images/HaptiChemLogo_s.jpg" width="100" height="75" alt="HaptiChem"></a></p>
+</body>
+</html>
