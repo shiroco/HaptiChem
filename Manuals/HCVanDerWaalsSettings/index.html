@@ -1,0 +1,504 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="stylesheet" href="../importstyle.css" type="text/css">
+<link rev="made" href="mailto:cheminfo@nii.ac.jp">
+<link rel="index" href="index.html">
+<link rel="shortcut icon" href="../HaptiChem.ico">
+<title>HCVanDerWaalsSettings</title>
+</head>
+<body>
+<p class="align-right"><a name="TOP">2007年01月25日</a></p>
+<hr>
+<h1>希ガス２分子間の相互作用 - 設定</h1>
+<p>もくじ：</p>
+<ul>
+  <li><a href="#About">設定とは</a>
+  <li><a href="#Open">設定を開く</a>
+  <li><a href="#Screen">画面</a>
+  <li><a href="#grip">グリップ</a>
+  <li><a href="#target">ターゲット</a>
+  <ul>
+    <li><a href="#rareGasMenu">希ガスメニュー</a>
+    <ul>
+      <li><a href="#Helium">ヘリウム</a>
+      <li><a href="#Neon">ネオン</a>
+      <li><a href="#Argon">アルゴン</a>
+      <li><a href="#Krypton">クリプトン</a>
+      <li><a href="#Xenon">キセノン</a>
+    </ul>
+  </ul>
+  <li><a href="#targetPosition">ターゲットの位置</a>
+  <ul>
+    <li><a href="#targetPositionMenu">ターゲットの位置メニュー</a>
+    <ul>
+      <li><a href="#Above">上</a>
+      <li><a href="#Below">下</a>
+      <li><a href="#Left">左</a>
+      <li><a href="#Right">右</a>
+    </ul>
+  </ul>
+  <li><a href="#forceGeneration">力の設定</a>
+  <ul>
+    <li><a href="#forceGenerationMenu">力の設定メニュー</a>
+    <ul>
+      <li><a href="#1-(kcal/mol/angstrom)-:-1-N">1 (kcal/mol/angstrom) : 1 N</a>
+      <li><a href="#Normalized-with-Xe">Xeで正規化</a>
+      <li><a href="#Normalizing-Max-Attractive-Force">最大引力で正規化</a>
+      <li><a href="#Rigid-Model">剛体モデル</a>
+    </ul>
+  </ul>
+  <li><a href="#scale">スケール</a>
+</ul>
+<hr>
+<h2><a name="About">設定とは</a></h2>
+<p>希ガス２分子間の相互作用で、実行条件を変更する際に利用します。<br>
+原子種やターゲットの位置を変更したり、力の出し方の調整、スケールの変更などができます。</p>
+<p>条件を変更すると、希ガス２分子間の相互作用に関連するウィンドウの表示が変化します。</p>
+<hr>
+<h2><a name="Open">設定を開く</a></h2>
+<p>設定を開くには、「 <a href="../HCVanDerWaalsChart/index.html" target="_blank">希ガス２分子間の相互作用 - チャート</a> 」で 「Window」-&gt;「Settings」メニューを選択します。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/Open_01.jpg"><img src="thumbnails/Open_01.jpg" width="179" height="189" border="1" alt="Open_01.jpg"></a></td>
+            <td class="center-small"><a href="images/Open_02.jpg"><img src="thumbnails/Open_02.jpg" width="122" height="174" border="1" alt="Open_02.jpg"></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h2><a name="Screen">画面</a></h2>
+<h3>画面説明</h3>
+<p>設定の画面は以下のようになっています。</p>
+<map name="Screen">
+  <area shape="rect" coords="268,307,290,334" href="#E" alt="E">
+  <area shape="rect" coords="268,265,292,292" href="#D" alt="D">
+  <area shape="rect" coords="267,206,291,233" href="#C" alt="C">
+  <area shape="rect" coords="268,70,292,97" href="#A" alt="A">
+  <area shape="rect" coords="268,145,291,172" href="#B" alt="B">
+  <area shape="default" nohref alt="nohref">
+</map> <img src="map/HCVanDerWaalsSettings.jpg" width="302" height="368" border="0" alt="HCVanDerWaalsSettings.jpg" usemap="#Screen">
+<ul>
+  <li><a name="A">A</a> : <strong>グリップ</strong>
+  <li><a name="B">B</a> : <strong>ターゲット</strong>
+  <li><a name="C">C</a> : <strong>ターゲットの位置</strong>
+  <li><a name="D">D</a> : <strong>力の設定</strong>
+  <li><a name="E">E</a> : <strong>スケール</strong>
+</ul>
+<hr>
+<h2><a name="grip">Grip<br>
+グリップ</a></h2>
+<p>自分が操作する分子になります。<br>
+<a href="#rareGasMenu">希ガスメニュー</a>に表示される５種類の中から選びます。</p>
+<h2><a name="target">Target<br>
+ターゲット</a></h2>
+<p>分子間力を計算する相手になります。<br>
+<a href="#rareGasMenu">希ガスメニュー</a>に表示される５種類の中から選びます。</p>
+<h3><a name="rareGasMenu">Rare Gas Menu<br>
+希ガスメニュー</a></h3>
+<p>グリップとターゲットのプルダウンメニューです。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/rareGasMenu.jpg"><img src="thumbnails/rareGasMenu.jpg" width="113" height="108" border="1" alt="rareGasMenu.jpg"></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table summary="table" border="0">
+  <tbody>
+    <tr>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#Helium"><code>Helium</code></a><br>
+            <a href="#Neon"><code>Neon</code></a><br>
+            <a href="#Argon"><code>Argon</code></a><br>
+            <a href="#Krypton"><code>Krypton</code></a><br>
+            <a href="#Xenon"><code>Xenon</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#Helium"><code>ヘリウム</code></a><br>
+            <a href="#Neon"><code>ネオン</code></a><br>
+            <a href="#Argon"><code>アルゴン</code></a><br>
+            <a href="#Krypton"><code>クリプトン</code></a><br>
+            <a href="#Xenon"><code>キセノン</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="Helium">Helium<br>
+ヘリウム</a></h4>
+<h4><a name="Neon">Neon<br>
+ネオン</a></h4>
+<h4><a name="Argon">Argon<br>
+アルゴン</a></h4>
+<h4><a name="Krypton">Krypton<br>
+クリプトン</a></h4>
+<h4><a name="Xenon">Xenon<br>
+キセノン</a></h4>
+<p>メニューに表示されている色で、チャートやビューファインダのオブジェクトが表示されます。<br>
+選択した分子によって、ファン・デル・ワールス相互作用の関数や、グリップ・ターゲットの大きさが変わります。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/He-He.jpg"><img src="thumbnails/He-He.jpg" width="179" height="377" border="1" alt="He-He.jpg"></a></td>
+            <td class="center-small"><a href="images/Ne-Kr.jpg"><img src="thumbnails/Ne-Kr.jpg" width="179" height="377" border="1" alt="Ne-Kr.jpg"></a></td>
+            <td class="center-small"><a href="images/Xe-Ar.jpg"><img src="thumbnails/Xe-Ar.jpg" width="179" height="377" border="1" alt="Xe-Ar.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">He He</td>
+            <td class="center-small">Ne Kr</td>
+            <td class="center-small">Xe Ar</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h2><a name="targetPosition">Target position<br>
+ターゲットの位置</a></h2>
+<p>ターゲットの位置を選びます。<br>
+グリップが中心の位置になります。<br>
+メニューを選ぶと、その方向へターゲットが移動します。 <br>
+ビューファインダで確認すると良いでしょう。<br>
+グリップとの力が０の距離（ポテンシャルが一番低い位置）に移動します。</p>
+<h3><a name="targetPositionMenu">Target position Menu<br>
+ターゲットの位置メニュー</a></h3>
+<table summary="table" border="0">
+  <tbody>
+    <tr>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#Above"><code>Above</code></a><br>
+            <a href="#Below"><code>Below</code></a><br>
+            <a href="#Left"><code>Left</code></a><br>
+            <a href="#Right"><code>Right</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#Above"><code>上</code></a><br>
+            <a href="#Below"><code>下</code></a><br>
+            <a href="#Left"><code>左</code></a><br>
+            <a href="#Right"><code>右</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="Above">Above<br>
+上</a></h4>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/targetPosition_Above.jpg"><img src="thumbnails/targetPosition_Above.jpg" width="179" height="189" border="1" alt="targetPosition_Above.jpg"></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="Below">Below<br>
+下</a></h4>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/targetPosition_Below.jpg"><img src="thumbnails/targetPosition_Below.jpg" width="179" height="189" border="1" alt="targetPosition_Below.jpg"></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="Left">Left<br>
+左</a></h4>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/targetPosition_Left.jpg"><img src="thumbnails/targetPosition_Left.jpg" width="179" height="189" border="1" alt="targetPosition_Left.jpg"></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="Right">Right<br>
+右</a></h4>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/targetPosition_Right.jpg"><img src="thumbnails/targetPosition_Right.jpg" width="179" height="189" border="1" alt="targetPosition_Right.jpg"></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h2><a name="forceGeneration">Force setting<br>
+力の設定</a></h2>
+<p>分子間力は実際にはすごく小さな力なので、SPIDAR-G で感じることのできるように、どのような変換をするかを選びます。<br>
+チャートの関数系の表示を対応させて見るとよいでしょう。</p>
+<h3><a name="forceGenerationMenu">Force setting Menu<br>
+力の設定メニュー</a></h3>
+<table summary="table" border="0">
+  <tbody>
+    <tr>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#1-(kcal/mol/angstrom)-:-1-N"><code>1 (kcal/mol/angstrom) : 1 N</code></a><br>
+            <a href="#Normalized-with-Xe"><code>Normalized with Xe</code></a><br>
+            <a href="#Normalizing-Max-Attractive-Force"><code>Normalizing Max Attractive Force</code></a><br>
+            <a href="#Rigid-Model"><code>Rigid Model</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#1-(kcal/mol/angstrom)-:-1-N"><code>1 (kcal/mol/angstrom) : 1 N</code></a><br>
+            <a href="#Normalized-with-Xe"><code>Xeで正規化</code></a><br>
+            <a href="#Normalizing-Max-Attractive-Force"><code>最大引力で正規化</code></a><br>
+            <a href="#Rigid-Model"><code>剛体モデル</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="1-(kcal/mol/angstrom)-:-1-N"><br>
+1 (kcal/mol/angstrom) : 1 N</a></h4>
+<p>力関数から得られる値を、単位系のみを変換して、力を提示します。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/forceGeneration_1_01.jpg"><img src="thumbnails/forceGeneration_1_01.jpg" width="179" height="189" border="1" alt="forceGeneration_1_01.jpg"></a></td>
+            <td class="center-small"><a href="images/forceGeneration_1_02.jpg"><img src="thumbnails/forceGeneration_1_02.jpg" width="179" height="189" border="1" alt="forceGeneration_1_02.jpg"></a></td>
+            <td class="center-small"><a href="images/forceGeneration_1_03.jpg"><img src="thumbnails/forceGeneration_1_03.jpg" width="179" height="189" border="1" alt="forceGeneration_1_03.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">He He</td>
+            <td class="center-small">Xe Ar</td>
+            <td class="center-small">Xe Xe</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="Normalized-with-Xe">Normalized with Xe<br>
+Xeで正規化</a></h4>
+<p>力関数から得られる値を、Xe-Xeの分子間力の引力の最大値が限度となるような変換をして、力を提示します。<br>
+例えば、He-Heの分子間力は、Xe-Xeの分子間力に比べて小さいので、SPIDAR-G で感じにくくなります。<br>
+分子の種類によって、力がどのように変化するのかを比較するのに最適です。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/forceGeneration_2_01.jpg"><img src="thumbnails/forceGeneration_2_01.jpg" width="179" height="189" border="1" alt="forceGeneration_2_01.jpg"></a></td>
+            <td class="center-small"><a href="images/forceGeneration_2_02.jpg"><img src="thumbnails/forceGeneration_2_02.jpg" width="179" height="189" border="1" alt="forceGeneration_2_02.jpg"></a></td>
+            <td class="center-small"><a href="images/forceGeneration_2_03.jpg"><img src="thumbnails/forceGeneration_2_03.jpg" width="179" height="189" border="1" alt="forceGeneration_2_03.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">He He</td>
+            <td class="center-small">Xe Ar</td>
+            <td class="center-small">Xe Xe</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="Normalizing-Max-Attractive-Force">Normalizing Max Attractive Force<br>
+最大引力で正規化</a></h4>
+<p>力関数から得られる値を、引力の最大値が限度となるような変換をして、力を提示します。<br>
+つまり、どんな分子間力でも、最大分子間力で引かれる強さが同じになります。<br>
+ある特定の分子で、距離によって力がどのように変化するのかを確認するのに最適です。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/forceGeneration_3_01.jpg"><img src="thumbnails/forceGeneration_3_01.jpg" width="179" height="189" border="1" alt="forceGeneration_3_01.jpg"></a></td>
+            <td class="center-small"><a href="images/forceGeneration_3_02.jpg"><img src="thumbnails/forceGeneration_3_02.jpg" width="179" height="189" border="1" alt="forceGeneration_3_02.jpg"></a></td>
+            <td class="center-small"><a href="images/forceGeneration_3_03.jpg"><img src="thumbnails/forceGeneration_3_03.jpg" width="179" height="189" border="1" alt="forceGeneration_3_03.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">He He</td>
+            <td class="center-small">Xe Ar</td>
+            <td class="center-small">Xe Xe</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="Rigid-Model">Rigid Model<br>
+剛体モデル</a></h4>
+<p>分子間力は提示されません。<br>
+グリップとターゲットがぶつかると、斥力を感じるようになっています。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/forceGeneration_4_01.jpg"><img src="thumbnails/forceGeneration_4_01.jpg" width="179" height="189" border="1" alt="forceGeneration_4_01.jpg"></a></td>
+            <td class="center-small"><a href="images/forceGeneration_4_02.jpg"><img src="thumbnails/forceGeneration_4_02.jpg" width="179" height="189" border="1" alt="forceGeneration_4_02.jpg"></a></td>
+            <td class="center-small"><a href="images/forceGeneration_4_03.jpg"><img src="thumbnails/forceGeneration_4_03.jpg" width="179" height="189" border="1" alt="forceGeneration_4_03.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">He He</td>
+            <td class="center-small">Xe Ar</td>
+            <td class="center-small">Xe Xe</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h2><a name="scale">Scale<br>
+スケール</a></h2>
+<p>1 angstrom (= 10<sup>-10</sup> m) が、実際に SPIDAR-G を動かす 何cm になるのかが表示されます。<br>
+グリップは境界箱の内部しか動かせませんので、スケールを変更して確認しやすい状況にすると良いでしょう。</p>
+<p>スケールを変更するには、ゲージを左右に動かします。<br>
+ゲージを動かすと、ビューファインダでグリップとターゲットの大きさが変化します。</p>
+<p>ゲージを左に動かすと、詳細部分は確認しにくくなりますが、グリップの可動範囲が広くなります。<br>
+離れた位置の状況を確認することができます。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/scale_05.jpg"><img src="thumbnails/scale_05.jpg" width="423" height="377" border="1" alt="scale_05.jpg"></a></td>
+            <td class="center-small">1 angstrom (= 10<sup>-10</sup> m) : (1/2) cm</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>初期状態は、1 angstrom (= 10<sup>-10</sup> m) : 1.0 cmです。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/scale_10.jpg"><img src="thumbnails/scale_10.jpg" width="423" height="377" border="1" alt="scale_10.jpg"></a></td>
+            <td class="center-small">1 angstrom (= 10<sup>-10</sup> m) : 1.0 cm</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>ゲージを右に動かすと、グリップの可動範囲が狭くなりますが、詳細部分を確認しやすくなります。<br>
+最大引力が出る距離の周辺で、力がどれくらい変わるか確かめてみるとよいでしょう。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/scale_35.jpg"><img src="thumbnails/scale_35.jpg" width="423" height="377" border="1" alt="scale_35.jpg"></a></td>
+            <td class="center-small">1 angstrom (= 10<sup>-10</sup> m) : 3.5 cm</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<p class="align-right"><a href="http://research.nii.ac.jp/~cheminfo/HaptiChem/" target="_blank"><img class="borderless" src="../images/HaptiChemLogo_s.jpg" width="100" height="75" alt="HaptiChem"></a></p>
+</body>
+</html>
