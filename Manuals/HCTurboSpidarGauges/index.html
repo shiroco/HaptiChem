@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="stylesheet" href="../importstyle.css" type="text/css">
+<link rev="made" href="mailto:cheminfo@nii.ac.jp">
+<link rel="index" href="index.html">
+<link rel="shortcut icon" href="../HaptiChem.ico">
+<title>HCTurboSpidarGauges</title>
+</head>
+<body>
+<p class="align-right"><a name="TOP">2007年01月25日</a></p>
+<hr>
+<h1>スパイダー・ゲージ</h1>
+<p>もくじ：</p>
+<ul>
+  <li><a href="#About">スパイダー・ゲージとは</a>
+  <li><a href="#Open">スパイダー・ゲージを開く</a>
+  <li><a href="#Screen">画面</a>
+</ul>
+<hr>
+<h2><a name="About">スパイダー・ゲージとは</a></h2>
+<p>SPIDAR-G の情報を表示します。 <br>
+グリップの位置（x, y, z）と姿勢（quaternion： 四元数の x, y, z）の６自由度、そして、SPIDAR-G に提示する力覚の並進力と回転力（トルク）を表示します。</p>
+<hr>
+<h2><a name="Open">スパイダー・ゲージを開く</a></h2>
+<p>スパイダー・ゲージを開くには、下記のツールで 「Window」-&gt;「Gauge」メニューを選択します。</p>
+<ul>
+  <li><a href="../HCVanDerWaalsChart/index.html" target="_blank">希ガス２分子間の相互作用</a>
+  <li><a href="../HCTurboSpidarViewfinder/index.html" target="_blank">スパイダー・ビューファインダ</a>
+</ul>
+<hr>
+<h2><a name="Screen">画面</a></h2>
+<h3>画面説明</h3>
+<p>スパイダー・ゲージの画面は以下のようになっています。</p>
+<map name="Screen">
+  <area shape="rect" coords="571,283,595,310" href="#D" alt="D">
+  <area shape="rect" coords="10,283,34,310" href="#C" alt="C">
+  <area shape="rect" coords="10,106,34,133" href="#A" alt="A">
+  <area shape="rect" coords="571,106,594,133" href="#B" alt="B">
+  <area shape="default" nohref alt="nohref">
+</map> <img src="map/HCTurboSpidarGauges.jpg" width="605" height="398" border="0" alt="HCTurboSpidarGauges.jpg" usemap="#Screen">
+<ul>
+  <li><a name="A">A</a> : <strong>グリップの位置</strong>（単位：ミリメートル）
+  <ul>
+    <li>Px：X成分
+    <li>Py：Y成分
+    <li>Py：Z成分
+  </ul>
+  <li><a name="B">B</a> : <strong>グリップの姿勢</strong>（単位：度数）
+  <ul>
+    <li>Rx：X軸の回転成分
+    <li>Ry：Y軸の回転成分
+    <li>Ry：Z軸の回転成分
+  </ul>
+  <li><a name="C">C</a> : <strong>提示する力覚の並進力</strong>（単位：ニュートン）
+  <ul>
+    <li>tFx：X成分
+    <li>tFy：Y成分
+    <li>tFy：Z成分
+  </ul>
+  <li><a name="D">D</a> : <strong>提示する力覚の回転力</strong>（単位：ニュートン）
+  <ul>
+    <li>rFx：X成分
+    <li>rFy：Y成分
+    <li>rFy：Z成分
+  </ul>
+</ul>
+<p>SPIDAR-G が接続されている場合には、ウィンドウのラベルに、スパイダー制御速度（周波数：Hz）が表示されます。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><img src="originals/GaugesLabelHz.jpg" width="158" height="26" border="1" alt="GaugesLabelHz.jpg"></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>この数値が小さくなると、実際に感じられる力が伝わるのが遅くなっていることになります。<br>
+マシンの性能によるところが大きいですが、余計なウィンドウを閉じたり、表示しているオブジェクトを減らすなどして、マシンへの負荷を減らすと良いでしょう。</p>
+<hr>
+<p class="align-right"><a href="http://research.nii.ac.jp/~cheminfo/HaptiChem/" target="_blank"><img class="borderless" src="../images/HaptiChemLogo_s.jpg" width="100" height="75" alt="HaptiChem"></a></p>
+</body>
+</html>

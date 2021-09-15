@@ -1,0 +1,479 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="stylesheet" href="../importstyle.css" type="text/css">
+<link rev="made" href="mailto:cheminfo@nii.ac.jp">
+<link rel="index" href="index.html">
+<link rel="shortcut icon" href="../HaptiChem.ico">
+<title>HCTurboSpidarViewfinder</title>
+</head>
+<body>
+<p class="align-right"><a name="TOP">2007年01月25日</a></p>
+<hr>
+<h1>スパイダー・ビューファインダ</h1>
+<p>もくじ：</p>
+<ul>
+  <li><a href="#About">スパイダー・ビューファインダとは</a>
+  <li><a href="#Open">スパイダー・ビューファインダを開く</a>
+  <li><a href="#Screen">画面</a>
+  <li><a href="#Menu">メニュー</a>
+  <ul>
+    <li><a href="#File">ファイル</a>
+    <ul>
+      <li><a href="#File_Save-as-Image">画像として保存</a>
+      <li><a href="#File_Quit">終了</a>
+    </ul>
+    <li><a href="#View">表示</a>
+    <ul>
+      <li><a href="#View_Axes">軸</a>
+      <li><a href="#View_Bounding-Box">境界箱</a>
+      <li><a href="#View_Frame">フレーム</a>
+      <li><a href="#View_Grip">グリップ</a>
+      <li><a href="#View_Shadows">影</a>
+      <li><a href="#View_Strings">糸</a>
+      <li><a href="#View_Reset">リセット</a>
+    </ul>
+    <li><a href="#Window">ウィンドウ</a>
+    <ul>
+      <li><a href="#Window_Gauge">ゲージ</a>
+    </ul>
+    <li><a href="#Misc">その他</a>
+    <ul>
+      <li><a href="#Misc_Manual">使用手引き</a>
+      <li><a href="#Misc_Inspect">検査</a>
+    </ul>
+  </ul>
+</ul>
+<hr>
+<h2><a name="About">スパイダー・ビューファインダとは</a></h2>
+<p>SPIDAR-G を仮想的に表示するビューファインダです。<br>
+フレームや糸も表示されますので、実際に SPIDAR-G を動かして動作確認するのに便利です。<br>
+SPIDAR-G と接続していないときは、マウスでグリップの位置を移動できます。</p>
+<hr>
+<h2><a name="Open">スパイダー・ビューファインダを開く</a></h2>
+<p>チャートを開くには、HaptiChemランチャーの「Tools」-&gt;「Spidar Viewfinder」メニューを選択します。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/Open_01.jpg"><img src="thumbnails/Open_01.jpg" width="102" height="89" border="1" alt="Open_01.jpg"></a></td>
+            <td class="center-small"><a href="images/Open_02.jpg"><img src="thumbnails/Open_02.jpg" width="179" height="189" border="1" alt="Open_02.jpg"></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h2><a name="Screen">画面</a></h2>
+<h3>画面説明</h3>
+<p>スパイダー・ビューファインダの画面は以下のようになっています。</p>
+<map name="Screen">
+  <area shape="rect" coords="306,406,327,433" href="#F" alt="F">
+  <area shape="rect" coords="223,406,245,433" href="#E" alt="E">
+  <area shape="rect" coords="139,406,163,433" href="#D" alt="D">
+  <area shape="rect" coords="10,336,34,363" href="#C" alt="C">
+  <area shape="rect" coords="438,380,460,407" href="#8" alt="8">
+  <area shape="rect" coords="438,302,460,329" href="#6" alt="6">
+  <area shape="rect" coords="438,341,460,368" href="#7" alt="7">
+  <area shape="rect" coords="438,200,460,227" href="#5" alt="5">
+  <area shape="rect" coords="438,146,460,173" href="#4" alt="4">
+  <area shape="rect" coords="10,34,34,61" href="#A" alt="A">
+  <area shape="rect" coords="11,185,34,212" href="#B" alt="B">
+  <area shape="rect" coords="438,107,460,134" href="#3" alt="3">
+  <area shape="rect" coords="438,29,460,56" href="#1" alt="1">
+  <area shape="rect" coords="435,68,463,95" href="#2" alt="2">
+  <area shape="default" nohref alt="nohref">
+</map> <img src="map/HCTurboSpidarViewfinder.jpg" width="473" height="446" border="0" alt="HCTurboSpidarViewfinder.jpg" usemap="#Screen">
+<ul>
+  <li><a name="1">1</a> : <strong>ピックボタン</strong>
+  <li><a name="2">2</a> : <strong>グラブボタン</strong>
+  <li><a name="3">3</a> : <strong>ドラッグボタン</strong>
+  <li><a name="4">4</a> : <strong>フォーカスボタン</strong>
+  <li><a name="5">5</a> : <strong>Ｚホィール</strong>
+  <li><a name="6">6</a> : <img src="buttons/calibrateButton.jpg" width="18" height="18" alt="calibrateButton.jpg"> <strong>キャリブレーションボタン</strong>
+  <li><a name="7">7</a> : <img src="buttons/visualButton.jpg" width="18" height="18" alt="visualButton.jpg"> <strong>視覚ボタン</strong>
+  <li><a name="8">8</a> : <img src="buttons/hapticButton.jpg" width="18" height="18" alt="hapticButton.jpg"> <strong>力覚ボタン</strong>
+</ul>
+<p>詳細は「<a href="../CommonOperation/index.html">共通操作</a>」を参照してください。</p>
+<ul>
+  <li><a name="A">A</a> : <strong>軸</strong>
+  <li><a name="B">B</a> : <strong>境界箱</strong>
+  <li><a name="C">C</a> : <strong>フレーム</strong>
+  <li><a name="D">D</a> : <strong>グリップ</strong>
+  <li><a name="E">E</a> : <strong>影</strong>
+  <li><a name="F">F</a> : <strong>糸</strong>
+</ul>
+<hr>
+<h2><a name="Menu">メニュー</a></h2>
+<p>ウィンドウの上部にあるメニューです。</p>
+<table summary="table" border="0">
+  <tbody>
+    <tr>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#File"><code>File -&gt;</code></a><br>
+            <a href="#View"><code>View -&gt;</code></a><br>
+            <a href="#Window"><code>Window -&gt;</code></a><br>
+            <a href="#Misc"><code>Misc -&gt;</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#File"><code>ファイル -&gt;</code></a><br>
+            <a href="#View"><code>表示 -&gt;</code></a><br>
+            <a href="#Window"><code>ウィンドウ -&gt;</code></a><br>
+            <a href="#Misc"><code>その他 -&gt;</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h3><a name="File">File<br>
+ファイル</a></h3>
+<table summary="table" border="0">
+  <tbody>
+    <tr>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#File_Save-as-Image"><code>Save as Image</code></a><br>
+            <hr>
+            <a href="#File_Quit"><code>Quit</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#File_Save-as-Image"><code>画像として保存</code></a><br>
+            <hr>
+            <a href="#File_Quit"><code>終了</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="File_Save-as-Image">Save as Image<br>
+画像として保存</a></h4>
+<p>ビューアに表示されている状態の画像ファイルを作成します。<br>
+デフォルトのファイル名は、[年月日時分秒].jpgです。</p>
+<p>保存される画像のサンプル</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/yyyymmddhhmmss_sample.jpg"><img src="thumbnails/yyyymmddhhmmss_sample.jpg" width="164" height="164" border="1" alt="yyyymmddhhmmss_sample.jpg"></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="File_Quit">Quit<br>
+終了</a></h4>
+<p>ウィンドウを閉じます。<br>
+このウィンドウに関連した、ゲージのウィンドウも同時に閉じます。</p>
+<hr>
+<h3><a name="View">View<br>
+表示</a></h3>
+<table summary="table" border="0">
+  <tbody>
+    <tr>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#View_Axes"><code>Axes</code></a><br>
+            <a href="#View_Bounding-Box"><code>Bounding Box</code></a><br>
+            <a href="#View_Frame"><code>Frame</code></a><br>
+            <a href="#View_Grip"><code>Grip</code></a><br>
+            <a href="#View_Shadows"><code>Shadows</code></a><br>
+            <a href="#View_Strings"><code>Strings</code></a><br>
+            <hr>
+            <a href="#View_Reset"><code>Reset</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#View_Axes"><code>軸</code></a><br>
+            <a href="#View_Bounding-Box"><code>境界箱</code></a><br>
+            <a href="#View_Frame"><code>フレーム</code></a><br>
+            <a href="#View_Grip"><code>グリップ</code></a><br>
+            <a href="#View_Shadows"><code>影</code></a><br>
+            <a href="#View_Strings"><code>糸</code></a><br>
+            <hr>
+            <a href="#View_Reset"><code>リセット</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="View_Axes">Axes<br>
+軸</a></h4>
+<p>軸の表示／非表示の設定をします。<br>
+X軸, Y軸, Z軸の方向が分かります。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/Open_02.jpg"><img src="thumbnails/Open_02.jpg" width="179" height="189" border="1" alt="Open_02.jpg"></a></td>
+            <td class="center-small"><a href="images/View_Axes_off.jpg"><img src="thumbnails/View_Axes_off.jpg" width="179" height="189" border="1" alt="View_Axes_off.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">表示</td>
+            <td class="center-small">非表示</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="View_Bounding-Box">Bounding Box<br>
+境界箱</a></h4>
+<p>境界箱の表示／非表示の設定をします。<br>
+SPIDAR-G でグリップを動かすことのできる範囲です。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/Open_02.jpg"><img src="thumbnails/Open_02.jpg" width="179" height="189" border="1" alt="Open_02.jpg"></a></td>
+            <td class="center-small"><a href="images/View_Bounding-Box_off.jpg"><img src="thumbnails/View_Bounding-Box_off.jpg" width="179" height="189" border="1" alt="View_Bounding-Box_off.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">表示</td>
+            <td class="center-small">非表示</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="View_Frame">Frame<br>
+フレーム</a></h4>
+<p>フレームの表示／非表示の設定をします。<br>
+SPIDAR-G のフレームがどのあたりにあるのかが分かります。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/Open_02.jpg"><img src="thumbnails/Open_02.jpg" width="179" height="189" border="1" alt="Open_02.jpg"></a></td>
+            <td class="center-small"><a href="images/View_Frame_off.jpg"><img src="thumbnails/View_Frame_off.jpg" width="179" height="189" border="1" alt="View_Frame_off.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">表示</td>
+            <td class="center-small">非表示</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="View_Grip">Grip<br>
+グリップ</a></h4>
+<p>グリップの表示／非表示の設定をします。<br>
+グリップは、自分が操作して、位置を移動することのできるオブジェクトです。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/Open_02.jpg"><img src="thumbnails/Open_02.jpg" width="179" height="189" border="1" alt="Open_02.jpg"></a></td>
+            <td class="center-small"><a href="images/View_Grip_off.jpg"><img src="thumbnails/View_Grip_off.jpg" width="179" height="189" border="1" alt="View_Grip_off.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">表示</td>
+            <td class="center-small">非表示</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="View_Shadows">Shadows<br>
+影</a></h4>
+<p>影の表示／非表示の設定をします。<br>
+グリップの位置が、境界箱の面上に影として表示されます。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/Open_02.jpg"><img src="thumbnails/Open_02.jpg" width="179" height="189" border="1" alt="Open_02.jpg"></a></td>
+            <td class="center-small"><a href="images/View_Shadows_off.jpg"><img src="thumbnails/View_Shadows_off.jpg" width="179" height="189" border="1" alt="View_Shadows_off.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">表示</td>
+            <td class="center-small">非表示</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="View_Strings">Strings<br>
+糸</a></h4>
+<p>糸の表示／非表示の設定をします。<br>
+SPIDAR-G の糸がどのあたりにあるのかが分かります。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/Open_02.jpg"><img src="thumbnails/Open_02.jpg" width="179" height="189" border="1" alt="Open_02.jpg"></a></td>
+            <td class="center-small"><a href="images/View_Strings_off.jpg"><img src="thumbnails/View_Strings_off.jpg" width="179" height="189" border="1" alt="View_Strings_off.jpg"></a></td>
+          </tr>
+          <tr>
+            <td class="center-small">表示</td>
+            <td class="center-small">非表示</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="View_Reset">Reset<br>
+リセット</a></h4>
+<p>ビューア内に表示しているものの全体が見られます。</p>
+<hr>
+<h3><a name="Window">Window<br>
+ウィンドウ</a></h3>
+<table summary="table" border="0">
+  <tbody>
+    <tr>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#Window_Gauge"><code>Gauge</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#Window_Gauge"><code>ゲージ</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="Window_Gauge">Gauge<br>
+ゲージ</a></h4>
+<p>スパイダー・ゲージのウィンドウを開きます。<br>
+詳細は「<a href="../HCTurboSpidarGauges/index.html" target="_blank">スパイダー・ゲージ</a>」を参照してください。</p>
+<p>スパイダー・ビューファインダでは、中心に向かう力が提示されるようになっています。<br>
+スパイダー・ビューファインダでグリップの位置を移動させると、中心から離れた距離と同じ程度、提示する力覚の並進力がかかるのが分かります。</p>
+<table class="belt" summary="table">
+  <tbody>
+    <tr>
+      <td>
+      <table class="content" summary="table">
+        <tbody>
+          <tr>
+            <td class="center-small"><a href="images/Window_Gauge.jpg"><img src="thumbnails/Window_Gauge.jpg" width="423" height="189" border="1" alt="Window_Gauge.jpg"></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h3><a name="Misc">Misc<br>
+その他</a></h3>
+<table summary="table" border="0">
+  <tbody>
+    <tr>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#Misc_Manual"><code>Manual</code></a><br>
+            <hr>
+            <a href="#Misc_Inspect"><code>Inspect</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td>
+      <table summary="table" border="1" cellpadding="10" cellspacing="0">
+        <tbody>
+          <tr>
+            <td align="left"><a href="#Misc_Manual"><code>使用手引き</code></a><br>
+            <hr>
+            <a href="#Misc_Inspect"><code>検査</code></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><a name="Misc_Manual">Manual<br>
+使用手引き</a></h4>
+<p>基本説明、メニュー等の説明が記述してある取扱説明書 (このページ)をブラウザで開きます。</p>
+<h4><a name="Misc_Inspect">Inspect<br>
+検査</a></h4>
+<p>このメニューは、ランタイム版では選択することができません。<br>
+開発時にプログラムの状態などを確認するためのメニューです。<br>
+選択可能な場合は、インスペクタが開きます。</p>
+<hr>
+<p class="align-right"><a href="http://research.nii.ac.jp/~cheminfo/HaptiChem/" target="_blank"><img class="borderless" src="../images/HaptiChemLogo_s.jpg" width="100" height="75" alt="HaptiChem"></a></p>
+</body>
+</html>
