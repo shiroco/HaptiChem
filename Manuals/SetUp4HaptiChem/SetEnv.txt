@@ -1,0 +1,8 @@
+# setenv <variable name> <variable value>
+
+# ------------------------------
+# HaptiChem
+#
+setenv HaptiChemWebPageUri 'http://research.nii.ac.jp/~cheminfo/HaptiChem/'
+setenv HaptiChemMailUri 'mailto:cheminfo@@nii.ac.jp'
+setenv HaptiChemManualBaseUri 'http://research.nii.ac.jp/~cheminfo/HaptiChem/Documents/Manuals/'
