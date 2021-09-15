@@ -21,7 +21,7 @@ https://www.youtube.com/watch?v=ZUb4-g8J93k
 
 Press release in 2007 (JP)
 -----------------------
-ITmedia (Japanese)
+ITmedia
 https://www.itmedia.co.jp/news/articles/0703/15/news104.html
 
 Nikkei XTech
