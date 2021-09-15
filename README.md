@@ -7,27 +7,32 @@ Contents
 ------------------------
 Repository : Source code
 
-Installation : Installation Manual (html,jp)
-Manuals : Users' Manual (html,jp)
+	Installation : Installation Manual (html,jp)
+	Manuals : Users' Manual (html,jp)
 
 Links
 ------------------------
 HaptiChem site (Japanese)
+
 http://research.nii.ac.jp/%7Echeminfo/HaptiChem/index.html
 
 SPIDAR - Haptic Device
+
 https://www.youtube.com/watch?v=ZUb4-g8J93k
 
 
 Press release in 2007 (JP)
 -----------------------
 ITmedia
+
 https://www.itmedia.co.jp/news/articles/0703/15/news104.html
 
 Nikkei XTech
+
 https://xtech.nikkei.com/it/article/NEWS/20070315/265391/
 
 CCS news
+
 https://www.ccsnews.jp/ccs2/2007/1q/2007_1Qniisatohaptichem.htm
 
 
