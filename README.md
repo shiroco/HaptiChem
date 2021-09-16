@@ -9,6 +9,10 @@ Contents
 	Installation : Installation Manual (html,jp)
 	Manuals : Users' Manual (html,jp)
 
+Demo Video
+------------------------
+https://youtu.be/vZm5NV3PHco
+
 Links
 ------------------------
 HaptiChem site (Japanese)
