@@ -33,6 +33,7 @@ https://www.itmedia.co.jp/news/articles/0703/15/news104.html
 Nikkei XTech
 
 https://xtech.nikkei.com/it/article/NEWS/20070315/265391/
+http://techon.nikkeibp.co.jp/article/NEWS/20070319/129070/
 
 CCS news
 
