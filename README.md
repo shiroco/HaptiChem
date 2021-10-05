@@ -22,6 +22,8 @@ http://research.nii.ac.jp/%7Echeminfo/HaptiChem/index.html
 SPIDAR - Haptic Device
 
 https://www.youtube.com/watch?v=ZUb4-g8J93k
+http://arachnoforce.com/spidar-g.html
+http://arachnoforce.com/movie.html
 
 
 Press release in 2007 (JP)
@@ -58,6 +60,7 @@ References
 9. Satoh, H.; Sato, M. HaptiChem: Intermolecular Force Display System Using Haptic Device SPIDAR-G. Gordon Research Conference on Visualization in Science & Education, Smithfield, USA, July, 2007.
 10. Murayama, J.; Shimizu, H.; Nam, C.S.; Satoh, H.; Sato, M. An Educational Environment for Chemical Contents with Haptic Interaction. Cyberworlds 2007, Hannover, Germany, October, 2007.
 11. Satoh, H. Haptic Molecular Modeling for Chemical Education. Kaken-hi Grant News, 2, 6-6 (2007) https://www.jsps.go.jp/j-grantsinaid/22_letter/data/news_2007_vol2/p06.pdf
+12. Satoh, H.; Narita A.; Aoki, A.; Akahane K.; Sato, M. Application of Virtual Reality in Chemical Education Using Intermolecular Force Display System HaptiChem. ChemRxiv https://doi.org/10.33774/chemrxiv-2021-pddld
 
 **********
 
