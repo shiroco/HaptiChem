@@ -1,6 +1,7 @@
 ------------------------
 HaptiChem - Virtual Reality for Chemistry 
- Move and Feel Molecules using Haptic Devise (Free Opensource code from 2007)
+
+ Move and Feel Molecules using Haptic Devise (Freeware from 2007)
 ------------------------
 
 Contents
